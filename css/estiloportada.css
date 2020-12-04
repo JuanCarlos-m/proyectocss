@@ -1,0 +1,61 @@
+
+/* Portada*/
+.portada{
+    display: flex;
+}
+
+.portada .imag{
+    background-image: url(../img/garden-garden-tools-watering-can-rake-shovel-hoe.jpg);
+    width: 70%;
+    height: 400px;
+}
+
+.portada .titulo {
+    background-color: #A49263;
+    font-family: NotoSans, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    max-height: 400px;
+    font-size: 1.2em;
+}
+
+.portada .titulo h2{
+    padding: 20%;
+}
+.portada .titulo :last-child{
+    margin: -5px;
+}
+
+/*Seccion de destacados*/
+section h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lista div{
+    margin-top: 10px;
+}
+.lista div div{
+    display: flex;
+    font-size: 1.1em;
+}
+
+.lista div .precio{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.lista div button {
+    float: right;
+    margin-top: -10px;
+}
+

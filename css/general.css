@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+button{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 35px;
+    background-color: #EFC741;
+    color: white;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+/*Encabezado*/
+header{
+    margin: 0 auto;
+    
+}
+
+.logotipo{
+    margin-left: 15%;
+}
+.logotipo_img{
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.busca {
+    float: right;
+    display: flex;
+    margin-right: 15%;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+.busca input{
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    height: 2em;
+}
+.busca button{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    float: none;
+    color: black;
+}
+
+
+
+  /*Menu de navegacion*/
+  nav {
+    margin-top: -17px; 
+    background-color: #77C94F;
+    font-family: Noto Sans, sans-serif;
+    width: 100%;
+}
+
+nav ul {
+    /* margin: 0px 30px; */
+    padding: 15px 15%;
+    list-style: none;
+    /* text-align: center; */
+    vertical-align: top;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav li{
+    list-style-type: none;
+
+}
+nav li a{
+    color: white;
+    font-size: 1.4em;
+    display: block;
+
+}
+
+/*Cuerpo*/
+main{
+    margin: 0px 15% 0px 15%;
+}
+
+.carro{
+    border: none;
+    width: 125px;
+    height: 31px;
+}
+
+/*Pie de página*/
+
+footer{
+    background-color:  #A49263;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15%;
+    font-size: 1.3em;
+    margin-top: 20px;
+
+}
+
+/*enlaces*/
+footer section{
+    width: 60%;
+}
+footer section div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 60%;
+}
+footer section p{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+footer section a{
+    color: #CEFF95;
+    font-size: initial;
+    text-decoration: underline;
+}
+
+/*Formulario newsletter*/
+footer form{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer form label{
+    font-size: initial;
+}
+
+footer form button {
+    /* float: right; */
+    width: 200px;
+    height: 1.8em;
+    background-color: #9FF140;
+    font-size: 1.2em;
+    color: white;
+
+}
+
+@media screen and (max-width: 1030px){
+    nav li a{
+        font-size: initial;
+    }
+    main{
+        margin: 0px 10% 0px 10%;
+    }
+}

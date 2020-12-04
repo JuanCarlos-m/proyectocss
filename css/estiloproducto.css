@@ -1,0 +1,117 @@
+small , h1 , h2, .precio{
+    color: #39AA02;
+    font-family: Noto Sans, sans-serif;
+}
+
+h2 {
+    color: initial;
+}
+/*Producto*/
+
+img {
+    border-style: solid;
+    border-width: 1px;
+}
+.producto .desc{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* height: 400px;*/
+}
+.producto .desc > div:first-of-type{
+    width: 40%;
+    /* min-height: 100%; */
+}
+
+.producto .desc > div:first-of-type > img{
+    min-width: 100%;
+}
+
+.producto .desc > div:first-of-type .galeria{
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.producto .desc > div:first-of-type .galeria img{
+    width: 15%;
+}
+
+.producto .desc .desc_texto{
+    margin-left: 3%;
+    padding-top: 2%;
+}
+
+.producto .desc .ref{
+    color: #585858;
+    font-size: 0.8em;
+}
+
+.producto .desc ol{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.producto .desc .precio{
+    margin-left: 80%;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+/*descripcion*/
+
+.descripcion div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.descripcion div p{
+    margin: 20px;
+}
+
+
+/*Comentarios*/
+
+.comentarios{
+    margin-bottom: 35px;
+}
+
+.valoracion{
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 25%;
+    padding: 2%;
+}
+
+.valoracion .comentar{
+    height: 2em;
+}
+
+.comentario{
+    width: 70%;
+}
+
+.comentarios .comentario .comentario_boton{
+    display: flex;
+    justify-content: space-around;
+    max-width: 35%;
+}
+
+.comentarios .comentario .comentario_boton button{
+    border-radius: 0px;
+    height: 2em;
+    font-family: Noto Sans;
+}
+
+.comentarios .comentario .comentario_boton .reportar {
+    background-color: #f6842d;
+}
+
+.comentarios .comentario .comentario_boton .like{
+    background-color: #6ee83b;
+}
