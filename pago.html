@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/estiloform.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto|Noto+Sans">
+    <script src="https://kit.fontawesome.com/3095b819ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="btmenu" onclick="menu()"><span class="fas fa-bars"></span></a>
+        <a href="index.html" class="logotipo"><img class="logotipo_img" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Renova_Logo.png" alt="logotipo"></a>
+        <a href="" class="carrmovil"><span class="fas fa-shopping-cart"></a>
+        <form class="busca">
+            <input type="search" placeholder="Buscar producto">
+            <button><span class="fas fa-search"></span></button>
+        </form>
+    </header>
+    <nav id="men">
+        <ul>
+            <li><a href="">Plantas</a></li>
+            <li><a href="">Herramientas</a></li>
+            <li><a href="">Cultivo</a></li>
+            <li><a href="">Decoración</a></li>
+            <li><a href="">Riego</a></li>
+            <li class="carrpc"><a href=""><span class="fas fa-shopping-cart"></a></span></li>
+            <li class="darkpc" onclick="oscuro()"><a href="#"><span class="fas fa-moon"></span></a></li>
+            <li class="darkmovil" onclick="oscuro()"><a href="#">Cambiar a modo oscuro <span class="fas fa-moon"></span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Formalizar Pedido</h1>
+        <form action="">
+            <fieldset class="entradas">
+                <legend>Dirección de envío</legend>
+                <div class="contenedor">
+                    <div><label for="">Nombre</label>
+                        <input type="text" name="" id=""></div>
+                    <div><label for="">Apellidos</label>
+                        <input type="text" name="" id=""></div>
+                </div>
+                <div class="contenedor">
+                    <div><label for="">Teléfono</label>
+                        <input type="tel" name="" id=""></div>
+                    <div><label for="">DNI</label>
+                        <input type="text" name="" id=""></div>
+                </div>
+                <div class="direccion"><label for="">Dirección</label>
+                    <input type="text" name="" id=""></div>
+                <div class="contenedor">
+                    <div class="pob"><label for="">Población</label>
+                        <input type="text" name="" id=""></div>
+                    <div class="cp"><label for="">Código Postal</label>
+                        <input type="text" name="" id=""></div>
+                </div>
+                <div class="contenedor">
+                    <div><label for="">Provincia</label>
+                        <select name="" id="">
+                            <option value="Cádiz">Cádiz</option>
+                        </select></div>
+                    <div><label for="">País</label>
+                    <select name="" id="">
+                        <option value="España">España</option>
+                    </select></div>
+                </div>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Método de envío</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="envio" id="">
+                        <label for="">Correos</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="envio" id="">
+                        <label for="">SEUR</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="envio" id="">
+                        <label for="">No me se mas</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Método de pago</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="pago" id="">
+                        <label for="">Contra-reembolso</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="pago" id="">
+                        <label for="">Tarjeta de crédito</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="pago" id="">
+                        <label for="">Transferencia Bancaria</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <p>Total Compra:</p>
+                    <p class="mon">9999.99€</p>
+                </div>
+                <div>
+                    <p>IVA 21%</p>
+                    <p class="mon">99.99€</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Total a Pagar:</p>
+                    <p class="mon">9999.99€</p>
+                </div>
+                <input type="submit" class="enviar" value="Pagar y Finalizar">
+            </fieldset>
+        </form>
+
+
+
+    </main>
+    <footer>
+        <section>
+            <h4>Acerca de nosotros:</h4>
+            <div>
+            <p><a href="">Quienes somos</a></p>
+            <p><a href="">Contactanos</a></p>
+            <p><a href="">¿Necesitas ayuda?</a></p>
+            <p><a href="">Preguntas Frecuentes</a></p>
+            <p><a href="">Términos de Servicio</a></p>
+            <p><a href="">Declaración de Privacidad</a></p>
+            </div>
+        </section>
+        <form action="">
+            <p>Suscribete a nuestra Newsletter:</p>
+            <input type="text" name="" id="">
+            <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Acepto la Declaración de Privacidad</label>
+            </div>
+            <br>
+            <button>Suscríbeme</button>
+        </form>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

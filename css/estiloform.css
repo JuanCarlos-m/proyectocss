@@ -1,0 +1,112 @@
+
+fieldset{
+    border: none;
+    
+}
+
+legend{
+    color: #39AA02;
+    font-size: 1.2em;
+    font-family: Noto Sans;
+}
+
+/* Datos de envio */
+.entradas{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.contenedor > div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 48%;
+}
+.direccion{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+input{
+    height: 1.5em;
+}
+
+select{
+    height: 2em;
+}
+.pob{
+    width: 73%;
+}
+
+.cp{
+    width: 23%;
+}
+
+/* Radios*/
+
+ul{
+    list-style-type: none;
+}
+
+/* Total*/
+
+fieldset:last-of-type{
+    margin-left: 25%;
+    width: 30%;
+    font-size: 1.2em;
+}
+
+fieldset:last-of-type > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset:last-of-type > div:last-of-type{
+    font-weight: bold;
+}
+
+.mon{
+    color:  #39AA02;
+    font-family: Noto Sans;
+}
+
+.enviar{
+    font-size: 1.5em;
+    height: 2em;
+    width: 280px;
+}
+
+@media screen and (max-width: 878px){
+    .contenedor , .direccion{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .contenedor{
+        display: block;
+    }
+
+    .contenedor div {
+        width: 100%;
+    }
+
+    fieldset:last-of-type{
+        margin-left: 10%;
+        width: 70%;
+    }
+
+    .enviar{
+        font-size: 1em;
+        height: 1.5em;
+        width: 180px;
+    }
+}

@@ -3,7 +3,7 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-button{
+button , .enviar{
     border-style: solid;
     border-width: thin;
     border-radius: 35px;
@@ -17,22 +17,33 @@ a{
 
 /*Encabezado*/
 header{
-    margin: 0 auto;
+    margin: 0px 10%;
     
 }
 
-.logotipo{
-    margin-left: 15%;
+header span{
+    font-size: 1.5em;
 }
+.btmenu{
+    display: none;
+    color: white;
+    font-size: 1.5em;
+}
+
 .logotipo_img{
     max-width: 150px;
     max-height: 100px;
 }
 
+.carrmovil{
+    display: none;
+    color: white;
+}
+
 .busca {
     float: right;
     display: flex;
-    margin-right: 15%;
+
     margin-top: 12px;
     flex-wrap: wrap;
   }
@@ -47,9 +58,12 @@ header{
 .busca button{
     background: none;
     border: none;
-    font-size: 1.5em;
-    float: none;
+    /*font-size: 1.5em;*/
     color: black;
+}
+
+.busca button span{
+    margin-top: 0;
 }
 
 
@@ -64,7 +78,7 @@ header{
 
 nav ul {
     /* margin: 0px 30px; */
-    padding: 15px 15%;
+    padding: 15px 10%;
     list-style: none;
     /* text-align: center; */
     vertical-align: top;
@@ -82,13 +96,99 @@ nav li a{
     color: white;
     font-size: 1.4em;
     display: block;
+}
 
+nav>ul>li.darkmovil{
+    display: none;
+}
+
+main{
+    margin: 0px 10% 0px 10%;
+}
+
+/*Menu version movil*/
+@media screen and (max-width: 624px){
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #77C94F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body.dark header{
+        background-color: #21610B;
+    };
+
+    header span{
+        color: white;
+        margin-top: 10px;
+    }
+
+    .btmenu{
+        display: block;
+        margin-left: 2%;
+    }
+    .busca{
+        margin:0;
+    }
+    .carrmovil{
+        display: block;
+    }
+
+    .busca input{
+        display: none;
+    }
+
+    .busca button{
+        color: white;
+    }
+    
+
+    nav{
+        width: 70%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+        height: 70%;
+        min-height: 330px;
+    }
+    nav ul{
+        display: block;
+    }
+
+    nav li{
+        margin-top: 25px;
+    }
+    
+    nav>ul>li.carrpc{
+        display: none;
+    }
+    
+    nav>ul>li.darkpc{
+        display: none;
+    }
+
+    nav>ul>li.darkmovil{
+        display: block;
+    }
+
+    main{
+        margin: 43.48px 10% 0px 10%;
+    }
 }
 
 /*Cuerpo*/
-main{
-    margin: 0px 15% 0px 15%;
+
+
+small , h1 , h2, .precio{
+    color: #39AA02;
+    font-family: Noto Sans, sans-serif;
 }
+
 
 .carro{
     border: none;
@@ -103,7 +203,7 @@ footer{
     color: white;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 15%;
+    padding: 0px 10%;
     font-size: 1.3em;
     margin-top: 20px;
 
@@ -155,7 +255,29 @@ footer form button {
     nav li a{
         font-size: initial;
     }
-    main{
-        margin: 0px 10% 0px 10%;
-    }
+}
+
+
+/* Modo noche*/
+body.dark{
+    background-color: #1C1C1C;
+    color: whitesmoke;
+}
+
+body.dark nav{
+    background-color: #21610B;
+}
+
+body.dark .busca button{
+    color: whitesmoke;
+    /*El fondo puesto a los botones toma prioridad y aparece
+    en el boton de busqueda si no se especifica nada aqui*/
+    background: none;
+}
+body.dark footer{
+    background-color: #796b48;
+}
+
+body.dark button , body.dark .enviar{
+    background-color: #bd9d34;
 }
